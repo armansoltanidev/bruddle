@@ -12,6 +12,9 @@ export default defineConfig({
       public: `${path.resolve(__dirname, "./public/")}`,
       pages: path.resolve(__dirname, "./src/pages"),
       types: `${path.resolve(__dirname, "./src/@types")}`,
+      features: `${path.resolve(__dirname, "./src/features")}`,
+      ui: `${path.resolve(__dirname, "./src/ui")}`,
+      services: `${path.resolve(__dirname, "./src/services")}`,
     },
   },
 });

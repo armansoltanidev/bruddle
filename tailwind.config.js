@@ -12,6 +12,13 @@ export default {
         "cream-primary": "rgba(250, 244, 240)",
         "poor-black": "rgba(22, 22, 22)",
       },
+      fontFamily: {
+        sans: ["Roboto Flex", "sans-serif"],
+      },
+
+      height: {
+        screen: "100dvh",
+      },
     },
   },
   plugins: [],

@@ -5,7 +5,6 @@
 *,
 *::before,
 *::after {
-  /* font-family: "Roboto Flex", sans-serif; */
   text-rendering: optimizeLegibility;
 }
 
