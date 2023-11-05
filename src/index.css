@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*,
+*::before,
+*::after {
+  /* font-family: "Roboto Flex", sans-serif; */
+  text-rendering: optimizeLegibility;
+}
+
+.shadow-lg {
+  -webkit-box-shadow: 4px 4px 0px 0px #000000;
+  box-shadow: 4px 4px 0px 0px #000000;
+}
+
+/* .active {
+  color: rgba(174, 122, 255);
+} */
