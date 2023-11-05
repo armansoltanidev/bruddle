@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { tv } from "tailwind-variants";
+import { Link } from "react-router-dom";
 
 const baseStyle = tv({
   base: "px-3 py-1 text-xs font-bold rounded-sm",
@@ -43,9 +44,11 @@ export default function Button({
   transition,
   size,
   shadow,
+  to,
 }) {
   return (
-    <button
+    <Link
+      to={to}
       className={baseStyle({
         class: className,
         color,
@@ -55,6 +58,6 @@ export default function Button({
       })}
     >
       {children}
-    </button>
+    </Link>
   );
 }

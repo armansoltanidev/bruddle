@@ -1,11 +1,18 @@
-import Button from "@/ui/Button";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Home from "@/pages/Home";
+import AppLayout from "@/pages/AppLayout";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/app",
+    element: <AppLayout />,
+  },
+]);
 
 export default function App() {
-  return (
-    <div>
-      <Button size="lg" className="shadow-lg">
-        Get start
-      </Button>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
